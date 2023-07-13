@@ -1,27 +1,27 @@
-# Proyecto de Impresora Térmica Personalizada con Arduino
+# Custom Thermal Printer Project with Arduino
 
-Este proyecto consiste en el diseño y construcción de una solución de impresión de etiquetas y tickets utilizando Arduino y una impresora térmica TTL RS232 CSN-A2, junto con un teclado y dos pulsadores.
+This project involves designing and building a custom label and ticket printing solution using Arduino and a TTL RS232 CSN-A2 thermal printer, along with a keypad and two push buttons.
 
-## Requisitos de Hardware
+## Hardware Requirements
 
-- Arduino Uno o compatible.
-- Impresora térmica TTL RS232 CSN-A2.
-- Teclado matricial.
-- Dos pulsadores.
-- Fuente de alimentación adecuada para la impresora y el Arduino.
-- Cables de conexión.
+- Arduino Uno or compatible.
+- TTL RS232 CSN-A2 thermal printer.
+- Matrix keypad.
+- Two push buttons.
+- Suitable power supply for the printer and Arduino.
+- Connecting cables.
 
-## Requisitos de Software
+## Software Requirements
 
 - Arduino IDE.
-- Librerías específicas para la impresora térmica, como Adafruit Thermal Printer Library o similar.
+- Specific libraries for the thermal printer, such as Adafruit Thermal Printer Library or similar.
 
-## Diagrama de Conexiones
+## Connection Diagram
 
-A continuación se muestra el diagrama de conexiones entre el Arduino, la impresora térmica, el teclado y los pulsadores:
+Below is the connection diagram between Arduino, the thermal printer, the keypad, and the push buttons:
 
                    +-----------------+
-                   | Impresora Térmica|
+                   | Thermal Printer |
                    |   TTL RS232     |
                    |    CSN-A2       |
                    +-----------------+
@@ -32,7 +32,7 @@ A continuación se muestra el diagrama de conexiones entre el Arduino, la impres
         +-----------------------------------+
         |                                   |
         |    +-------------------------+    |
-        |    |       Teclado           |    |
+        |    |        Keypad           |    |
         |    +-------------------------+    |
         |    |   +-----+  +-----+      |    |
         |    |   |Btn1 |  |Btn2 |      |    |
@@ -41,22 +41,22 @@ A continuación se muestra el diagrama de conexiones entre el Arduino, la impres
         |                                   |
         +-----------------------------------+
 
-## Pasos de Implementación
+## Implementation Steps
 
-1. **Configuración del hardware**: Conecta la impresora térmica, el teclado y los pulsadores a las salidas correspondientes en el Arduino según el diagrama de conexiones. Asegúrate de utilizar los niveles de voltaje adecuados y las resistencias de pull-up o pull-down necesarias.
+1. **Hardware Setup**: Connect the thermal printer, keypad, and push buttons to the appropriate outputs on the Arduino according to the connection diagram. Make sure to use the correct voltage levels and include any necessary pull-up or pull-down resistors.
 
-2. **Instalación de las librerías**: Abre el Arduino IDE y asegúrate de tener instaladas las librerías específicas para la impresora térmica que estás utilizando, como la Adafruit Thermal Printer Library. Si es necesario, sigue las instrucciones de instalación proporcionadas por el fabricante de la impresora térmica.
+2. **Library Installation**: Open the Arduino IDE and ensure that you have installed the specific libraries for the thermal printer you are using, such as the Adafruit Thermal Printer Library. If necessary, follow the installation instructions provided by the thermal printer manufacturer.
 
-3. **Desarrollo del código**: Escribe el código en el Arduino IDE para controlar la impresora térmica, leer las entradas del teclado y los pulsadores, y enviar los comandos de impresión correspondientes. Puedes utilizar las librerías mencionadas anteriormente para facilitar la comunicación con la impresora.
+3. **Code Development**: Write the code in the Arduino IDE to control the thermal printer, read input from the keypad and push buttons, and send the appropriate print commands. You can use the aforementioned libraries to facilitate communication with the printer.
 
-4. **Pruebas y ajustes**: Realiza pruebas exhaustivas del sistema de impresión de etiquetas y tickets. Verifica que los comandos de impresión sean enviados correctamente y que los datos se impriman de acuerdo a tus requisitos. Realiza ajustes en el código y la configuración si es necesario.
+4. **Testing and Adjustments**: Perform comprehensive testing of the label and ticket printing system. Verify that print commands are sent correctly and that data is printed according to your requirements. Make adjustments to the code and configuration as necessary.
 
-5. **Construcción del sistema**: Diseña y construye una carcasa o estructura para alojar el Arduino, la impresora térmica, el teclado y los pulsadores de acuerdo a tus necesidades. Asegúrate de proporcionar un acceso adecuado para la carga de papel y el mantenimiento de la impresora.
+5. **System Construction**: Design and build a casing or structure to house the Arduino, thermal printer, keypad, and push buttons according to your needs. Ensure proper access for paper loading and printer maintenance.
 
-## Contribuciones
+## Contributions
 
-Si deseas contribuir a este proyecto, siéntete libre de hacer fork del repositorio y enviar pull requests con tus mejoras.
+If you wish to contribute to this project, feel free to fork the repository and submit pull requests with your improvements.
 
-## Licencia
+## License
 
-Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para obtener más detalles.
+This project is distributed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
